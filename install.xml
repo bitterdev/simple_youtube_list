@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+    <blocktypes>
+        <blocktype handle="youtube_video_list" package="simple_youtube_list"/>
+    </blocktypes>
+
+    <blocktypesets>
+        <blocktypeset handle="multimedia" name="Multimedia" package="">
+            <blocktype handle="youtube_video_list"/>
+        </blocktypeset>
+    </blocktypesets>
+</concrete5-cif>

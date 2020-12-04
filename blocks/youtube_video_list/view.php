@@ -37,7 +37,7 @@ use Concrete\Package\SimpleYoutubeList\Block\YoutubeVideoList\Controller;
                 $videoId = $resultItem["id"]["videoId"];
                 ?>
                 <?php if ($videoId !== null) { ?>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="youtube-video-entry">
                             <a href="<?php echo (string)Url::to("https://www.youtube.com/watch")->setQuery(["v" => $videoId]); ?>"
                                target="_blank" title="<?php echo h($snippet["title"]); ?>" class="thumbnail">

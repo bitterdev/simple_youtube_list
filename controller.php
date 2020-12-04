@@ -16,7 +16,7 @@ use Concrete\Core\Package\Package;
 class Controller extends Package
 {
     protected $pkgHandle = 'simple_youtube_list';
-    protected $pkgVersion = '0.9.5';
+    protected $pkgVersion = '1.0.0';
     protected $appVersionRequired = '8.0.0';
     protected $pkgAutoloaderRegistries = [
         'src/Bitter/SimpleYoutubeList' => 'Bitter\SimpleYoutubeList',

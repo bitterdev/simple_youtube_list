@@ -1,3 +1,7 @@
+Version 1.0.0
+==================================================
+- Fix column definition for better mobile support
+
 Version 0.9.5
 ==================================================
 - Set filter to display youtube videos only when executing the api key

@@ -1,0 +1,17 @@
+{
+  "packageHandle": "simple_youtube_list",
+  "packageFile": "build/simple_youtube_list.zip",
+  "title": "Simple Youtube List",
+  "supportHostedOffsite": true,
+  "supportHostedOffsiteUrl": "https://www.bitter.de/support",
+  "singlePrice": 35,
+  "skillLevel": "Beginner",
+  "keywords": "fabian bitter, youtube, you tube, you, tube, videos, video, list, display, block, block type, type, display, all, item, items",
+  "shortDescription": "Contains a block type to display all videos from a YouTube-channel.",
+  "categories": [16, 1273, 50],
+  "supportPlan": 12,
+  "screenshots": [
+      "https://static.bitter.de:9000/public/2016/0727/4437/1.jpg",
+      "https://static.bitter.de:9000/public/8816/0727/4436/2.jpg"
+  ],
+}

@@ -15,6 +15,7 @@
 .youtube-video-list .youtube-video-entry .thumbnail {
     position: relative;
     padding-bottom: 56.2%;
+    border: 0 !important;
 }
 
 .youtube-video-list .youtube-video-entry .thumbnail img {

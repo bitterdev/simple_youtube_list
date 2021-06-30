@@ -1,0 +1,263 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simple_youtube_list 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-06-30T10:18:42+00:00\n"
+"PO-Revision-Date: 2021-06-30 12:27+0200\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: \n"
+"Language: de\n"
+
+#: packages/simple_youtube_list/install.xml:8
+msgctxt "BlockTypeSetName"
+msgid "Multimedia"
+msgstr "Multimedia"
+
+#: packages/simple_youtube_list/controller.php:27
+#, fuzzy
+msgid "Contains a block type to display all videos from a YouTube-channel."
+msgstr ""
+"Enthält einen Blocktyp, um alle Videos von einem YouTube-Kanal anzuzeigen."
+
+#: packages/simple_youtube_list/controller.php:32
+#, fuzzy
+msgid "Simple Youtube List"
+msgstr "Einfache Youtube-Liste"
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/controller.php:30
+#, fuzzy
+msgid "Display all videos from a YouTube-channel."
+msgstr "Zeigt alle Videos von einem YouTube-Kanal an."
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/controller.php:35
+#, fuzzy
+msgid "Youtube Video List"
+msgstr "Youtube Videoliste"
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/controller.php:43
+#, fuzzy
+msgid "You need to enter a valid API Key."
+msgstr "Sie müssen einen gültigen API-Schlüssel eingeben."
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/controller.php:47
+#, fuzzy
+msgid "You need to enter a valid channel id."
+msgstr "Sie müssen eine gültige Kanal-ID eingeben."
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/controller.php:51
+#, fuzzy
+msgid "Max results must between 1 and 50"
+msgstr "Maximale Ergebnisse müssen zwischen 1 und 50 liegen"
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/edit.php:30
+#, fuzzy
+msgid "API Key"
+msgstr "API-Schlüssel"
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/edit.php:38
+#, fuzzy
+msgid "get an API Key"
+msgstr "Abrufen eines API-Schlüssels"
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/edit.php:35
+#: packages/simple_youtube_list/blocks/youtube_video_list/edit.php:57
+#, fuzzy, php-format
+msgid "Learn more about how to %s."
+msgstr "Erfahren Sie mehr darüber, wie Sie %s."
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/edit.php:45
+#, fuzzy
+msgid "Channel Id"
+msgstr "Kanal-Nr"
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/edit.php:49
+#, fuzzy
+msgid "https://www.youtube.com/channel/"
+msgstr "https://www.youtube.com/channel/"
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/edit.php:60
+#, fuzzy
+msgid "get the Channel Id"
+msgstr "die Kanal-ID abrufen"
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/edit.php:67
+#, fuzzy
+msgid "Max Results per page"
+msgstr "Max. Ergebnisse pro Seite"
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/view.php:29
+#, fuzzy
+msgid "No videos found."
+msgstr "Keine Videos gefunden."
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/view.php:70
+#: packages/simple_youtube_list/blocks/youtube_video_list/view.php:76
+#, fuzzy
+msgid "Back"
+msgstr "Zurück"
+
+#: packages/simple_youtube_list/blocks/youtube_video_list/view.php:84
+#: packages/simple_youtube_list/blocks/youtube_video_list/view.php:90
+#, fuzzy
+msgid "Next"
+msgstr "Weiter"
+
+#: packages/simple_youtube_list/elements/dashboard/did_you_know.php:96
+#, fuzzy
+msgid "Did you know?"
+msgstr "Schon gewusst?"
+
+#: packages/simple_youtube_list/elements/dashboard/did_you_know.php:105
+#: packages/simple_youtube_list/elements/dashboard/did_you_know.php:135
+#: packages/simple_youtube_list/elements/dashboard/help.php:32
+#, fuzzy
+msgid "here"
+msgstr "hier"
+
+#: packages/simple_youtube_list/elements/dashboard/did_you_know.php:102
+#, fuzzy, php-format
+msgid ""
+"I have many other add-ons to power up your site. Maybe the following add-on "
+"sounds interesting to you? If you want to see a full list with all of my add-"
+"ons, please click %s. As an existing customer you will get 10%% discount on "
+"your next purchase."
+msgstr ""
+"Ich habe viele andere Add-ons die nützliche für Ihre Webseite sein könnte. "
+"Vielleicht klingt das folgende Add-on für Sie interessant? Wenn Sie eine "
+"vollständige Liste mit allen Add-Ons sehen möchten, klicken Sie bitte auf "
+"%s. Als Bestandskunde erhalten Sie 10%% Rabatt auf Ihren nächsten Einkauf."
+
+#: packages/simple_youtube_list/elements/dashboard/did_you_know.php:120
+#, fuzzy
+msgid "Details"
+msgstr "Details"
+
+#: packages/simple_youtube_list/elements/dashboard/did_you_know.php:135
+#, fuzzy, php-format
+msgid "Click %s to hide."
+msgstr "Klicken Sie %s zum ausblenden."
+
+#: packages/simple_youtube_list/elements/dashboard/help.php:28
+#, fuzzy, php-format
+msgid "If you need support please click %s."
+msgstr "Wenn Sie Unterstützung benötigen, klicken Sie bitte auf %s."
+
+#: packages/simple_youtube_list/elements/dashboard/help.php:44
+#, fuzzy
+msgid "Support"
+msgstr "Support"
+
+#: packages/simple_youtube_list/elements/dashboard/install_post.php:24
+#, fuzzy
+msgid "Thank You for purchasing this add-on!"
+msgstr "Vielen Dank für den Kauf dieses Add-on!"
+
+#: packages/simple_youtube_list/elements/dashboard/install_post.php:28
+#, fuzzy
+msgid ""
+"Follow me on Twitter and Facebook to get the latest news and notifications "
+"about updates, new add-ons/themes and special offers."
+msgstr ""
+"Folgen Sie mir auf Twitter und Facebook, um die neuesten Nachrichten und "
+"Benachrichtigungen über Updates, neue Add-ons/Themen und Sonderangebote zu "
+"erhalten."
+
+#: packages/simple_youtube_list/elements/dashboard/install_post.php:37
+#, fuzzy
+msgid "Follow @fabian_bitter"
+msgstr "@fabian_bitter"
+
+#: packages/simple_youtube_list/controllers/dialog/support/create_ticket.php:56
+#, fuzzy
+msgid "Ticket Created"
+msgstr "Ticket erstellt"
+
+#: packages/simple_youtube_list/controllers/dialog/support/create_ticket.php:57
+#, fuzzy
+msgid "Your ticket has been successfully created."
+msgstr "Ihr Ticket wurde erfolgreich erstellt."
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:22
+#, fuzzy
+msgid "Bug"
+msgstr "Fehler"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:23
+#, fuzzy
+msgid "Enhancement"
+msgstr "Verbesserung"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:24
+#, fuzzy
+msgid "Proposal"
+msgstr "Vorschlag"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:25
+#, fuzzy
+msgid "Task"
+msgstr "Aufgabe"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:29
+#, fuzzy
+msgid "Trivial"
+msgstr "Trivial"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:30
+#, fuzzy
+msgid "Minor"
+msgstr "Gering"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:31
+#, fuzzy
+msgid "Major"
+msgstr "Groß"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:32
+#, fuzzy
+msgid "Critical"
+msgstr "Kritisch"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:33
+#, fuzzy
+msgid "Blocker"
+msgstr "Blocker"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:59
+#, fuzzy
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:64
+#, fuzzy
+msgid "Title"
+msgstr "Titel"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:69
+#, fuzzy
+msgid "Content"
+msgstr "Inhalt"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:74
+#, fuzzy
+msgid "Type"
+msgstr "Typ"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:79
+#, fuzzy
+msgid "Priority"
+msgstr "Priorität"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:85
+#, fuzzy
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: packages/simple_youtube_list/views/dialogs/support/create_ticket.php:89
+#, fuzzy
+msgid "Create Ticket"
+msgstr "Ticket erstellen"

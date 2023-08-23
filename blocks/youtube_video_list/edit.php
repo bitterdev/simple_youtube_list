@@ -22,8 +22,6 @@ $app = Application::getFacadeApplication();
 /** @var Form $form */
 $form = $app->make(Form::class);
 
-/** @noinspection PhpUnhandledExceptionInspection */
-View::element('/dashboard/help', null, 'simple_youtube_list');
 ?>
 
     <div class="form-group">
@@ -45,7 +43,7 @@ View::element('/dashboard/help', null, 'simple_youtube_list');
         <?php echo $form->label("channelId", t('Channel Id')); ?>
 
         <div class="input-group">
-            <div class="input-group-addon">
+            <div class="input-group-text">
                 <?php echo t("https://www.youtube.com/channel/"); ?>
             </div>
 
@@ -67,8 +65,3 @@ View::element('/dashboard/help', null, 'simple_youtube_list');
         <?php echo $form->label("maxResults", t('Max Results per page')); ?>
         <?php echo $form->number("maxResults", $maxResults, ["min" => 1, "max" => 50, "step" => 1]); ?>
     </div>
-
-<?php
-/** @noinspection PhpUnhandledExceptionInspection */
-View::element('/dashboard/did_you_know', ["packageHandle" => "simple_youtube_list"], 'simple_youtube_list');
-?>

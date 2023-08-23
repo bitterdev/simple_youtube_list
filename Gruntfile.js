@@ -54,12 +54,7 @@ module.exports = function (grunt) {
             main: {
                 files: [
                     {src: ['blocks/**'], dest: "dist/"},
-                    {src: ['controllers/**'], dest: "dist/"},
-                    {src: ['elements/**'], dest: "dist/"},
-                    {src: ['routes/**'], dest: "dist/"},
-                    {src: ['src/**'], dest: "dist/"},
-                    {src: ['views/**'], dest: "dist/"},
-                    {src: ['controllers/**'], dest: "dist/"},
+                    {src: ['languages/**'], dest: "dist/"},
                     {src: ['controller.php'], dest: "dist/", filter: 'isFile'},
                     {src: ['icon.png'], dest: "dist/", filter: 'isFile'},
                     {src: ['INSTALL.TXT'], dest: "dist/", filter: 'isFile'},
@@ -72,7 +67,7 @@ module.exports = function (grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'build/' + packageName + '.zip'
+                    archive: 'release/' + packageName + '.zip'
                 },
                 files: [
                     {src: ['**'], dest: packageName, expand: true, cwd: 'dist/'}
@@ -82,25 +77,14 @@ module.exports = function (grunt) {
         clean: {
             dist: ['dist'],
             composer: ['vendor', 'composer.lock']
-        },
-        phpcsfixer: {
-            app: {
-                dir: 'dist'
-            },
-            options: {
-                bin: './vendor/friendsofphp/php-cs-fixer/php-cs-fixer',
-                usingCache: "no",
-                quiet: true
-            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-composer');
-    grunt.loadNpmTasks('grunt-php-cs-fixer');
     grunt.loadNpmTasks('grunt-version');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['clean:dist', 'copy', 'clean:composer', 'composer:dev:install', 'phpcsfixer', 'compress:main', 'clean:dist']);
+    grunt.registerTask('default', ['clean:dist', 'copy', 'compress:main', 'clean:dist']);
 };

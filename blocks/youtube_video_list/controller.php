@@ -43,7 +43,7 @@ class Controller extends BlockController
             $errorList->add(t("You need to enter a valid API Key."));
         }
 
-        if (!isset($args["channelId"]) || strlen($args["channelId"]) < 24) {
+        if (!isset($args["channelId"]) || strlen($args["channelId"]) < 1) {
             $errorList->add(t("You need to enter a valid channel id."));
         }
 
@@ -83,6 +83,8 @@ class Controller extends BlockController
 
     public function add()
     {
+        $this->set('apiKey', "");
+        $this->set('channelId', "");
         $this->set('maxResults', 5);
     }
 

@@ -10,14 +10,13 @@
 
 namespace Concrete\Package\SimpleYoutubeList;
 
-use Bitter\SimpleYoutubeList\Provider\ServiceProvider;
 use Concrete\Core\Package\Package;
 
 class Controller extends Package
 {
     protected $pkgHandle = 'simple_youtube_list';
-    protected $pkgVersion = '1.0.0';
-    protected $appVersionRequired = '8.0.0';
+    protected $pkgVersion = '1.5.0';
+    protected $appVersionRequired = '9.0.0';
     protected $pkgAutoloaderRegistries = [
         'src/Bitter/SimpleYoutubeList' => 'Bitter\SimpleYoutubeList',
     ];
@@ -30,13 +29,6 @@ class Controller extends Package
     public function getPackageName()
     {
         return t('Simple Youtube List');
-    }
-
-    public function on_start()
-    {
-        /** @var ServiceProvider $serviceProvider */
-        $serviceProvider = $this->app->make(ServiceProvider::class);
-        $serviceProvider->register();
     }
 
     public function install()

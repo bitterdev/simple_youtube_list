@@ -1,5 +1,6 @@
 {
   "name": "bitter/simple_youtube_list",
+  "description": "Contains a block type to display all videos from a YouTube-channel.",
   "type": "concrete5-package",
   "autoload": {
     "psr-4": {

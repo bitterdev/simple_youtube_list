@@ -11,6 +11,7 @@ namespace Concrete\Package\SimpleYoutubeList\Block\YoutubeVideoList;
 
 use Concrete\Core\Block\BlockController;
 use Concrete\Core\Error\ErrorList\ErrorList;
+use Concrete\Core\Http\Request;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
@@ -51,6 +52,8 @@ class Controller extends BlockController
             $errorList->add(t("Max results must between 1 and 50"));
         }
 
+        $r = Request::getInstance();
+
         if (!$errorList->has()) {
             try {
                 $client = new Client();
@@ -60,6 +63,13 @@ class Controller extends BlockController
                         'key' => $args["apiKey"],
                         'channelId' => $args["channelId"],
                         'maxResults' => $args["maxResults"]
+                    ],
+                    'headers' => [
+                        "Referer" => sprintf(
+                            '%s://%s',
+                            $r->getScheme(),
+                            $r->getHost()
+                        )
                     ]
                 ]);
 
@@ -96,6 +106,8 @@ class Controller extends BlockController
         try {
             $client = new Client();
 
+            $r = Request::getInstance();
+
             $response = $client->request('GET', 'https://www.googleapis.com/youtube/v3/search', [
                 'query' => [
                     'part' => 'snippet',
@@ -104,6 +116,13 @@ class Controller extends BlockController
                     'channelId' => $this->channelId,
                     'maxResults' => $this->maxResults,
                     'pageToken' => $pageToken
+                ],
+                'headers' => [
+                    "Referer" => sprintf(
+                        '%s://%s',
+                        $r->getScheme(),
+                        $r->getHost()
+                    )
                 ]
             ]);
 

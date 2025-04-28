@@ -47,7 +47,7 @@ use Concrete\Package\SimpleYoutubeList\Block\YoutubeVideoList\Controller;
                                     <source media="(min-width:<?php echo h($thumbnails["medium"]["width"]); ?>px)"
                                             srcset="<?php echo h($thumbnails["medium"]["url"]); ?>">
                                     <img src="<?php echo $thumbnails["medium"]["url"]; ?>"
-                                         alt="<?php echo h($snippet["title"]); ?>" class="img-responsive">
+                                         alt="<?php echo h($snippet["title"]); ?>" class="img-fluid">
                                 </picture>
                             </a>
 

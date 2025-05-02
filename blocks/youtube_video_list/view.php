@@ -32,9 +32,14 @@ use Concrete\Package\SimpleYoutubeList\Block\YoutubeVideoList\Controller;
         <div class="row">
             <?php foreach ($results["items"] as $resultItem) { ?>
                 <?php
-                $snippet = $resultItem["snippet"];
-                $thumbnails = $snippet["thumbnails"];
-                $videoId = $resultItem["id"]["videoId"];
+                $snippet = $resultItem["snippet"] ?? null;
+                $thumbnails = $snippet["thumbnails"] ?? null;
+                $videoId = $resultItem["id"]["videoId"] ?? null;
+
+                if ($videoId === null) {
+                    $videoId = $resultItem["snippet"]["resourceId"]["videoId"] ?? null;
+                }
+
                 ?>
                 <?php if ($videoId !== null) { ?>
                     <div class="col-xs-12 col-md-6 col-lg-4">

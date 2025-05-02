@@ -13,7 +13,7 @@
         <field name="channelId" type="string" size="24">
             <notnull/>
         </field>
-        <field name="playlistId" type="string" size="24">
+        <field name="playlistId" type="string" size="50">
             <notnull/>
         </field>
         <field name="maxResults" type="smallint" size="2">

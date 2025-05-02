@@ -68,7 +68,7 @@ View::element("dashboard/help", [], "simple_youtube_list");
 
 <div class="form-group">
     <?php echo $form->label("playlistId", t('Playlist Id')); ?>
-    <?php echo $form->text("playlistId", $playlistId, ["max-length" => 24]); ?>
+    <?php echo $form->text("playlistId", $playlistId, ["max-length" => 50]); ?>
 
     <p class="help-text small">
         <?php echo t("Leave empty if you want to display all videos of your channel."); ?>

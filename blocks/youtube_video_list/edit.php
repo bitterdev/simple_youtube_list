@@ -16,7 +16,10 @@ use Concrete\Core\View\View;
 
 /** @var int $maxResults */
 /** @var string $channelId */
+/** @var string $playlistId */
 /** @var string $apiKey */
+
+$playlistId = $playlistId ?? null;
 
 $app = Application::getFacadeApplication();
 /** @var Form $form */
@@ -61,6 +64,15 @@ View::element("dashboard/help", [], "simple_youtube_list");
             )
         ); ?>
     </div>
+</div>
+
+<div class="form-group">
+    <?php echo $form->label("playlistId", t('Playlist Id')); ?>
+    <?php echo $form->text("playlistId", $playlistId, ["max-length" => 24]); ?>
+
+    <p class="help-text small">
+        <?php echo t("Leave empty if you want to display all videos of your channel."); ?>
+    </p>
 </div>
 
 <div class="form-group">

@@ -24,6 +24,8 @@ class Controller extends BlockController
     /** @var string */
     protected $channelId = '';
     /** @var string */
+    protected $playlistId = '';
+    /** @var string */
     protected $apiKey = '';
 
     public function getBlockTypeDescription()
@@ -95,6 +97,7 @@ class Controller extends BlockController
     {
         $this->set('apiKey', "");
         $this->set('channelId', "");
+        $this->set('playlistId', "");
         $this->set('maxResults', 5);
     }
 
@@ -108,23 +111,43 @@ class Controller extends BlockController
 
             $r = Request::getInstance();
 
-            $response = $client->request('GET', 'https://www.googleapis.com/youtube/v3/search', [
-                'query' => [
-                    'part' => 'snippet',
-                    'type' => 'video',
-                    'key' => $this->apiKey,
-                    'channelId' => $this->channelId,
-                    'maxResults' => $this->maxResults,
-                    'pageToken' => $pageToken
-                ],
-                'headers' => [
-                    "Referer" => sprintf(
-                        '%s://%s',
-                        $r->getScheme(),
-                        $r->getHost()
-                    )
-                ]
-            ]);
+            if (isset($this->playlistId) && strlen($this->playlistId) > 0) {
+                $response = $client->request('GET', 'https://www.googleapis.com/youtube/v3/playlistItems', [
+                    'query' => [
+                        'part' => 'snippet',
+                        'type' => 'video',
+                        'key' => $this->apiKey,
+                        'playlistId' => $this->playlistId,
+                        'maxResults' => $this->maxResults,
+                        'pageToken' => $pageToken
+                    ],
+                    'headers' => [
+                        "Referer" => sprintf(
+                            '%s://%s',
+                            $r->getScheme(),
+                            $r->getHost()
+                        )
+                    ]
+                ]);
+            }   else {
+                $response = $client->request('GET', 'https://www.googleapis.com/youtube/v3/search', [
+                    'query' => [
+                        'part' => 'snippet',
+                        'type' => 'video',
+                        'key' => $this->apiKey,
+                        'channelId' => $this->channelId,
+                        'maxResults' => $this->maxResults,
+                        'pageToken' => $pageToken
+                    ],
+                    'headers' => [
+                        "Referer" => sprintf(
+                            '%s://%s',
+                            $r->getScheme(),
+                            $r->getHost()
+                        )
+                    ]
+                ]);
+            }
 
             $raw = $response->getBody()->getContents();
             /** @noinspection PhpComposerExtensionStubsInspection */

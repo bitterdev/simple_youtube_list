@@ -25,9 +25,10 @@ $app = Application::getFacadeApplication();
 /** @var Form $form */
 $form = $app->make(Form::class);
 
-View::element("dashboard/help", [], "simple_youtube_list");
+View::element("dashboard/help_blocktype", [], "simple_youtube_list");
 ?>
 
+<?php \Concrete\Core\View\View::element("dashboard/did_you_know", [], "simple_youtube_list"); ?>
 
 <div class="form-group">
     <?php echo $form->label("apiKey", t('API Key')); ?>
